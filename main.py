@@ -79,7 +79,7 @@ async def scrape_profile(request: ScrapeRequest):
         options.add_argument("--disable-dev-shm-usage")
 
         # Specify Chrome binary location (Adjust the path for Windows)
-        chrome_path = "/usr/bin/google-chrome"
+        chrome_path = "/usr/bin/chromium-browser"
         options.binary_location = chrome_path
 
         # Initialize ChromeDriver using WebDriver Manager
